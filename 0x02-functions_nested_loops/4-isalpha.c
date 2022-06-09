@@ -1,22 +1,26 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- *  * main - check the code.
- *   *
- *    * Return: Always 0.
- *     */
-int main(void)
+ * _isalpha - checks for alphabetic character
+ * @b: int
+ * description - return 1 if it is upper or lower
+ * Return: 1 if alphabet and 0 if otherwise
+ */
+int _isalpha(int b)
 {
-	    int r;
+	if (b >= 97 && b <= 122)
+	{
+		return (1);
+	}
 
-	        r = _isalpha('H');
-		    _putchar(r + '0');
-		        r = _isalpha('o');
-			    _putchar(r + '0');
-			        r = _isalpha(108);
-				    _putchar(r + '0');
-				        r = _isalpha(';');
-					    _putchar(r + '0');
-					        _putchar('\n');
-						    return (0);
+	else if (b >= 65 && b <= 90)
+	{
+		return (1);
+	}
+
+	else
+	{
+		return (0);
+	}
 }

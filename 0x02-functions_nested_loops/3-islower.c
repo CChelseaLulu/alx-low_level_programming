@@ -1,20 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* main - check the code.
-*   
-* Return: Always 0.
-*/
-int main(void)
-{
-	int r;
+ * _islower - function name
+ *
+ * @b : variable
+ *
+ * description : checks if it islower case
+ *
+ * Return : int
+ */
 
-	r = _islower('H');
-	_putchar(r + '0');
-	r = _islower('o');
-	_putchar(r + '0');
-	 r = _islower(108);
-	_putchar(r + '0');
-	_putchar('\n')
-	return (0);
+int _islower(int b)
+{
+	if (b >= 97 && b <= 122)
+	{
+		return (1);
+	}
+	else
+		return (0);
 }

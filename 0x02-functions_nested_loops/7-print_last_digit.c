@@ -1,18 +1,30 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- *  * main - check the code
- *   *
- *    * Return: Always 0.
- *     */
-int main(void)
-{
-	    int r;
+ * print_last_digit - prints last digit
+ * @b: integer
+ *
+ * description: prints put the last digit of the value
+ * Return: b
+ */
 
-	        print_last_digit(98);
-		    print_last_digit(0);
-		        r = print_last_digit(-1024);
-			    _putchar('0' + r);
-			        _putchar('\n');
-				    return (0);
+int print_last_digit(int b)
+{
+	if (b < 0)
+	{
+		b = -(b % 10);
+	}
+	else if (b > 0)
+	{
+		b = b % 10;
+	}
+	else
+	{
+		b = 0;
+	}
+
+	_putchar(b + '0');
+
+	return (b);
 }

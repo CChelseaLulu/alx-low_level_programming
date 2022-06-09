@@ -1,29 +1,25 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
-* main - check the code
-* prints lowercase alphabet
-* c is the variable
-* Return: Always 0.
-*/
-void ft_putchar(char c);
+ * print_alphabet - function to return void
+ *
+ * main - entry point
+ *
+ * declaration : print_alphabet in small letters
+ *
+ * Return: void
+ *
+ */
 
-void ft_print_alphabet(void)
+void print_alphabet(void)
 {
-	char letter;
+int alphabet = 'a';
 
-	letter = 'a';
-	while (letter <= 'z')
+	while (alphabet <= 'z')
 	{
-		ft_putchar(letter);
-		letter++;
+		_putchar(alphabet);
+		alphabet++;
 	}
+_putchar('\n');
 }
-
-int main(void)
-{
-	ft_print_alphabet();
-	return (0);
-}
-

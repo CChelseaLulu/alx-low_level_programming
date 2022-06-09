@@ -1,12 +1,27 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* main - check the code.
-*
-* Return: Always 0.
-*/
-int main(void)
+ * print_alphabet_x10 - function name
+ * declaration - print out alphabet 10 times
+ *
+ * Return : void
+ *
+ */
+
+void print_alphabet_x10(void)
+
 {
-	print_alphabet_x10();
-	return (0);
+	int alphabet;
+	int c;
+
+	for (c = 1; c <= 10; c++)
+	{
+		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+
+		{
+			_putchar(alphabet);
+		}
+		_putchar('\n');
+	}
 }

@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _islower - function name
+ * _islower : function name
  *
  * @b : variable
  *
